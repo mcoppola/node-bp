@@ -4,7 +4,7 @@
   "private": true,
   "repository": "https://github.com/mcoppola/node-bp.git",
   "dependencies": {
-    "express": "*",
+    "express": "3.4.x",
     "mu2": "0.5.x",
     "less-middleware": "*",
     "optimist": ">= 0.0.1"

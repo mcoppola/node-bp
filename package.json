@@ -7,7 +7,11 @@
     "express": "4.x",
     "less-middleware": "*",
     "optimist": ">= 0.0.1",
-    "nunjucks": "1.x"
+    "nunjucks": "1.x",
+    "lodash": "*",
+    "browserify": "*",
+    "watchify": "*",
+    "colors": "*"
     },
   "engines": {
     "node": "0.10.x"

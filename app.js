@@ -6,7 +6,7 @@ var express = require('express'),
 // Load express configuration
 require(__dirname + '/config/env.js')(express, app);
 
-// Load Browserify config
+// Browserify config
 require(__dirname + '/config/browserify.js')({
   files: ['./public/js/_site.js'],
   outputFile: '_site-compiled.js',

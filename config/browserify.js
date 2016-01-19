@@ -5,7 +5,6 @@ var browserify = require('browserify');
 var watchify   = require('watchify');
 
 module.exports = function(options) {
-
   // config
   var files = options.files;
   var outputName = (options.outputFile || '_site-compiled.js');
@@ -15,12 +14,10 @@ module.exports = function(options) {
   var verbose = options.verbose || true;
   var notifications = options.notifications;
 
-
   var browserifyOptions = {
     cache: {},
     packageCache: {},
     'opts.basedir': basedir,
-
     // if we are in development mode we want fullPaths to enable sourceMaps
     fullPaths: development,
     // enable sourceMaps in development
@@ -98,13 +95,10 @@ module.exports = function(options) {
     }
   }
 
-
   // run bundle on startup.
   bundleAssets( function(err) {
     if (verbose && !err) {
       console.error('Ran initial Browserify asset bundling.'.green.bold);
     }
-    return;
   });
-
 };
